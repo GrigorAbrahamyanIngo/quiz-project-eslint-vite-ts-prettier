@@ -22,6 +22,7 @@
     }
   },
   "rules": {
+    "import/extensions": "off",
     "react-hooks/rules-of-hooks": "off",
     "prettier/prettier": "warn",
     // only 1st and 2nd level imports are allowed from MUI package
@@ -47,7 +48,8 @@
         ],
         "react/require-default-props": "off",
         "react/jsx-props-no-spreading": "off",
-        "react/react-in-jsx-scope": "off"
+        "react/react-in-jsx-scope": "off",
+        "@typescript-eslint/lines-between-class-members": "off"
       }
     }
   ]
