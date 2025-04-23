@@ -43,7 +43,14 @@
         "*.tsx"
       ],
       "rules": {
-        "@typescript-eslint/no-unused-vars": [
+        "react/function-component-definition": [
+          0,
+          {
+            "namedComponents": "function-declaration",
+            "unnamedComponents": "arrow-function"
+          }
+        ],
+    "@typescript-eslint/no-unused-vars": [
           "error"
         ],
         "react/require-default-props": "off",

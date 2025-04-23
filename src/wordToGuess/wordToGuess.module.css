@@ -1,4 +1,4 @@
-.wordGuess-wrapper{
+.wordGuess_wrapper{
     max-width: 800px;
     display: flex;
     flex-direction: column;
@@ -6,6 +6,6 @@
     margin: 0 auto;
     align-items: center;
 }
-.wordGuess-text{
+.wordGuess_text{
 
 }
