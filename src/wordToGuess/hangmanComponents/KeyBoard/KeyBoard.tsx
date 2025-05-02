@@ -1,3 +1,4 @@
+import React from 'react';
 import css from './KeyBoard.module.css';
 
 const KEYS = [
@@ -35,7 +36,7 @@ type KeyboardProps = {
   addGuessedLetter: (letter: string) => void;
 };
 
-const KeyBoard: React.FC = ({
+const KeyBoard: React.FC<KeyboardProps> = ({
   activeLetter,
   inactiveLetters,
   addGuessedLetter,

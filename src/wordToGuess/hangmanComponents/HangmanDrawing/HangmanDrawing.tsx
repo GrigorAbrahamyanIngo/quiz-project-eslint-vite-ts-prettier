@@ -1,3 +1,4 @@
+import React from 'react';
 import './hangmanDrawing.css';
 
 const HEAD = <div className="head"> </div>;
@@ -17,7 +18,9 @@ type HangmanWordProps = {
 
 const BODY_PARTS = [HEAD, BODY, RIGHT_ARM, LEFT_ARM, RIGHT_LEG, LEFT_LEG];
 
-const HangmanDrawing: React.FC = ({ numberOfGuess }: HangmanWordProps) => {
+const HangmanDrawing: React.FC<HangmanWordProps> = ({
+  numberOfGuess,
+}: HangmanWordProps) => {
   return (
     <div className="hangmanDrawing-wrapper">
       {BODY_PARTS.slice(0, numberOfGuess)}

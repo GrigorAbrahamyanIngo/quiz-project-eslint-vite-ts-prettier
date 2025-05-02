@@ -1,3 +1,4 @@
+import React from 'react';
 import './HangmanWord.css';
 
 type HangmanWordProps = {
@@ -5,7 +6,7 @@ type HangmanWordProps = {
   wordToGuess: string;
 };
 
-const HangmanWord: React.FC = ({
+const HangmanWord: React.FC<HangmanWordProps> = ({
   guessedLetters,
   wordToGuess,
 }: HangmanWordProps) => {
